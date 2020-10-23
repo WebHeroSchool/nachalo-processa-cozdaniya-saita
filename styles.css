@@ -2,33 +2,48 @@
       font-family:Roboto;
 }
 body{
-  border: dashed 1px red;
   margin: 0
 }
 .header, .main-section{
-  border: dashed 1px red;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
 }
 .wrapper{
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
-}
+  }
 .menu{
  display:flex;
  align-items:center;
-   border: dashed 1px red
-}
+ }
 .logo{
-  padding: 40px 0;
-  font-family: pt_serif, arial, helvetica, sans-serif;
-  border: dashed 1px red
-}
+ padding: 40px 0;
+ padding-left: 44px;
+ font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+ position: relative;
+ }
 .menu__item{
   padding: 0 13px;
-  border: dashed 1px red
 }
 .menu__item:last-child{
   padding-right:0
+}
+.logo__circle{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius:50%;
+  opacity:.7;
+  }
+.logo__circle_color_blue{
+  left:8px;
+  top:56%;
+  background: #C8DBFB
+}
+.logo__circle_color_darc-blue{
+  background: #0056EC
 }
