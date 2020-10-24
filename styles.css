@@ -24,9 +24,17 @@ body{
  position: relative;
  }
 .menu__item{
+  position: relative;
   padding: 0 13px;
+  margin-right:26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
+
 }
 .menu__item:last-child{
+  margin-right:0px;
   padding-right:0
 }
 .logo__circle{
@@ -46,4 +54,21 @@ body{
 }
 .logo__circle_color_darc-blue{
   background: #0056EC
+}
+.menu__item:hover:after{
+  position: absolute;
+  display:block;
+  left:0;
+  content:'';
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s
+}
+.menu__item:hover{
+ opacity: 0.5;
+}
+.menu__item:hover:after, menu__item_active:after{
+opacity: 1;
 }
